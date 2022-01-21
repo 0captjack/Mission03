@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+@*Grade Calculator goes here
+    This is the GradeCalcView that draws from the _Layout page but uses a
+    render body method for certain things in the body*@
+
+<h2>Grade Calc</h2>
+<form>
+
+    <label>Assignments:</label>
+    <input type="number" id="assval" name="quantity" min="0" max="100" /> <br />
+    <label>Group Project:</label>
+    <input type="number" id="groupval" name="quantity" min="0" max="100" /> <br />
+    <label>Quizzes:</label>
+    <input type="number" id="quizval" name="quantity" min="0" max="100" /> <br />
+    <label>Exams:</label>
+    <input type="number" id="examval" name="quantity" min="0" max="100" /> <br />
+    <label>INTEX:</label>
+    <input type="number" id="intexval" name="quantity" min="0" max="100" /> <br />
+    <br />
+    <!-- These are the input boxes for the grade values. They are limited between 0-100 -->
+    <input id="btnSend" type="button" value="ButtonBox" /> <br />
+    <!-- Button -->
+</form>
+
+<script src="~/js/JavaScript.js"></script>
+<!-- If I understand right this is in here so that the .js can be activated when someone
+    clicks the button -->

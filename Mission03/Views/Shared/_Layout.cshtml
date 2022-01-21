@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    @*<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calc</a>
+    </nav>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <br /><br />
+    <footer>Copyright Jackson Washburn 2022</footer>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
